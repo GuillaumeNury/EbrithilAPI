@@ -1,0 +1,6 @@
+bin/ebrithilapi/**/*.class
+.project
+.settings/*
+bin/specs/**/*.yaml
+target/generated-sources/annotations/*
+logs/*
