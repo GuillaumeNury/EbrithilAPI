@@ -1,3 +1,5 @@
 ebrithilapi.AppModuleFactoryMachine
 ebrithilapi.rest.HelloResourceFactoryMachine
 ebrithilapi.rest.HelloResourceRouterFactoryMachine
+ebrithilapi.rest.RatpResourceFactoryMachine
+ebrithilapi.rest.RatpResourceRouterFactoryMachine

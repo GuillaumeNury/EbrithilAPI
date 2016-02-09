@@ -1,15 +1,16 @@
 package ebrithilapi;
 
 import restx.config.ConfigLoader;
+
 import restx.config.ConfigSupplier;
 import restx.factory.Provides;
+import restx.mongo.MongoModule;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableSet;
 import restx.security.*;
 import restx.factory.Module;
-import restx.factory.Provides;
 import javax.inject.Named;
 
 import java.nio.file.Paths;
@@ -36,6 +37,11 @@ public class AppModule {
     @Provides
     public CredentialsStrategy credentialsStrategy() {
         return new BCryptCredentialsStrategy();
+    }
+    
+    @Provides @Named(MongoModule.MONGO_DB_NAME)
+    public String dbName() {
+        return "restx-ebrithilapi";
     }
 
     @Provides
