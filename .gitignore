@@ -4,3 +4,4 @@ bin/ebrithilapi/**/*.class
 bin/specs/**/*.yaml
 target/generated-sources/annotations/*
 logs/*
+*Config.java
