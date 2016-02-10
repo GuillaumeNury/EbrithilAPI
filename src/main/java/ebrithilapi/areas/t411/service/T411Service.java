@@ -18,7 +18,7 @@ import ebrithilapi.areas.t411.model.TorrentRaw;
 
 public class T411Service {
 	private String token;
-	private String BASE_URL = "https://api.t411.in";
+	public static String BASE_URL = "https://api.t411.in";
 	private String LOGIN_PATH = "/auth";
 	private String TORRENT_OF_THE_WEEK_PATH = "/torrents/top/week";
 
@@ -67,7 +67,7 @@ public class T411Service {
 	// GET TORRENTS
 	public ArrayList<Torrent> getTopWeekTorrents() throws ClientProtocolException, ParseException, IOException{
 		ClientAPIFactory<TorrentRaw[]> client = new ClientAPIFactory<>(TorrentRaw[].class);
-		TorrentRaw[] torrents = client.doGet(this.BASE_URL + this.TORRENT_OF_THE_WEEK_PATH, getHeadersForAPI());
+		TorrentRaw[] torrents = client.doGet(T411Service.BASE_URL + this.TORRENT_OF_THE_WEEK_PATH, getHeadersForAPI());
 		
 		return this.formatTorrentRaws(torrents);
 	}
@@ -78,9 +78,13 @@ public class T411Service {
 	
 	// CORE
 	public ArrayList<Torrent> formatTorrentRaws(TorrentRaw[] torrents){
+		TorrentChooserService chooser = new TorrentChooserService();
 		ArrayList<Torrent> result = new ArrayList<>();
+		
 		for(TorrentRaw torrent : torrents){
-			result.add(Torrent.fromTorrentRaw(torrent));
+			Torrent t = Torrent.fromTorrentRaw(torrent);
+			t.cleanedName = chooser.getCleanName(torrent.name);
+			result.add(t);
 		}
 		
 		return result;
@@ -94,7 +98,7 @@ public class T411Service {
 			params.add(new BasicNameValuePair("password", AuthenticationConfig.password));
 			
 			ClientAPIFactory<Auth> client = new ClientAPIFactory<Auth>(Auth.class);
-			Auth auth = client.doPost(this.BASE_URL + this.LOGIN_PATH, params);
+			Auth auth = client.doPost(T411Service.BASE_URL + this.LOGIN_PATH, params);
 			
 			this.token = auth.getToken();
 		}

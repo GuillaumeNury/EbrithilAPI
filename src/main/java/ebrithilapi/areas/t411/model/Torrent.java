@@ -1,12 +1,18 @@
 package ebrithilapi.areas.t411.model;
 
 import org.joda.time.DateTime;
+import org.joda.time.Days;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 public class Torrent {
+	public static String BASE_T411_URL = "https://www.t411.in";
+	
 	public long id;
 	public String name;
+	public String cleanedName;
+	public String link;
+	public String downloadLink;
 	public String category;
 	public int seeders;
 	public int leechers;
@@ -15,12 +21,15 @@ public class Torrent {
 	public long size;
 	public String readableSize;
 	public long times_completed;
+	private int _score; 
 	
-	public Torrent(long id, String name, String category, int seeders, int leechers, boolean isVerified, DateTime added,
+	public Torrent(long id, String name, String link, String downloadLink, String category, int seeders, int leechers, boolean isVerified, DateTime added,
 			long size, String readableSize, long times_completed) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.link = link;
+		this.downloadLink = downloadLink;
 		this.category = category;
 		this.seeders = seeders;
 		this.leechers = leechers;
@@ -29,6 +38,7 @@ public class Torrent {
 		this.size = size;
 		this.readableSize = readableSize;
 		this.times_completed = times_completed;
+		this._score = -1;
 	}
 	
 	public static Torrent fromTorrentRaw(TorrentRaw torrent){
@@ -38,6 +48,8 @@ public class Torrent {
 		return new Torrent(
 				torrent.id,
 				torrent.name,
+				Torrent.BASE_T411_URL + "/torrents/" + torrent.rewritename,
+				Torrent.BASE_T411_URL + "/torrents/download?id=" + torrent.id,
 				torrent.categoryname,
 				torrent.seeders,
 				torrent.leechers,
@@ -76,4 +88,21 @@ public class Torrent {
 		
 		return (minimizedSize/1000) + " " + unit;
 	}
+
+	public int getScore(){
+		if(this._score == -1){
+			float days = Days.daysBetween(this.added, DateTime.now()).getDays();
+			float downloads = this.times_completed;
+			float activeSL = this.seeders + this.leechers;		
+			
+			double score = downloads
+					* Math.pow((1 + (activeSL)/downloads),3)
+					* (1 + 0.2 * days);
+			
+			this._score = (int) score;
+		}
+		
+		return this._score;
+	}
+
 }
