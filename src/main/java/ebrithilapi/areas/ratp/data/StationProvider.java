@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ebrithilapi.ratp.data;
+package ebrithilapi.areas.ratp.data;
 
-import ebrithilapi.ratp.model.Station;
+import ebrithilapi.areas.ratp.model.Station;
 
 /**
  *

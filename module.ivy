@@ -34,5 +34,8 @@
         <dependency org="io.restx" name="restx-specs-tests" rev="0.34" conf="test->default" />
         <dependency org="junit" name="junit" rev="4.11" conf="test->default" />
         <dependency org="org.jsoup" name="jsoup" rev="1.7.2"/>
+        <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.1"/>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.7.1"/>
+        <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.7.1-1"/>
     </dependencies>
 </ivy-module>

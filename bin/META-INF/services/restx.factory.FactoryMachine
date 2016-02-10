@@ -3,3 +3,5 @@ ebrithilapi.rest.HelloResourceFactoryMachine
 ebrithilapi.rest.HelloResourceRouterFactoryMachine
 ebrithilapi.rest.RatpResourceFactoryMachine
 ebrithilapi.rest.RatpResourceRouterFactoryMachine
+ebrithilapi.rest.T411ResourceFactoryMachine
+ebrithilapi.rest.T411ResourceRouterFactoryMachine

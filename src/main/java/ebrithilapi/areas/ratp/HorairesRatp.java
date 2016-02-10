@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ebrithilapi.ratp;
+package ebrithilapi.areas.ratp;
 
-import ebrithilapi.ratp.data.MainProvider;
-import ebrithilapi.ratp.model.Ride;
-import ebrithilapi.ratp.service.RideService;
+import ebrithilapi.areas.ratp.data.MainProvider;
+import ebrithilapi.areas.ratp.model.Ride;
+import ebrithilapi.areas.ratp.service.RideService;
+
 import java.util.ArrayList;
 
 /**

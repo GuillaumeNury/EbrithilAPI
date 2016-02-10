@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ebrithilapi.ratp.service;
+package ebrithilapi.areas.ratp.service;
 
-import ebrithilapi.ratp.model.Ride;
-import ebrithilapi.ratp.model.TimeTable;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ebrithilapi.areas.ratp.model.Ride;
+import ebrithilapi.areas.ratp.model.TimeTable;
 
 /**
  *

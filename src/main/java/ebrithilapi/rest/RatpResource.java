@@ -1,11 +1,12 @@
 package ebrithilapi.rest;
 
 import java.util.ArrayList;
-import ebrithilapi.ratp.data.MainProvider;
-import ebrithilapi.ratp.model.Ride;
-import ebrithilapi.ratp.model.TimeTable;
-import ebrithilapi.ratp.model.TimeTableLight;
-import ebrithilapi.ratp.service.RideService;
+
+import ebrithilapi.areas.ratp.data.MainProvider;
+import ebrithilapi.areas.ratp.model.Ride;
+import ebrithilapi.areas.ratp.model.TimeTable;
+import ebrithilapi.areas.ratp.model.TimeTableLight;
+import ebrithilapi.areas.ratp.service.RideService;
 import restx.annotations.GET;
 import restx.annotations.RestxResource;
 import restx.factory.Component;
