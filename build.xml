@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="EbrithilAPI">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../../Tools/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Ivy.libraryclasspath">
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-jongo/jars/restx-jongo-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-factory/jars/restx-factory-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-common/jars/restx-common-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.google.guava/guava/bundles/guava-17.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.9-RC1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.javassist/javassist/jars/javassist-3.16.1-GA.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.0.b2.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.samskivert/jmustache/bundles/jmustache-1.8.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-core/jars/restx-core-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-joda/bundles/jackson-datatype-joda-2.3.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-guava/bundles/jackson-datatype-guava-2.3.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-classloader/jars/restx-classloader-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-apidocs-doclet/jars/restx-apidocs-doclet-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-core-annotation-processor/jars/restx-core-annotation-processor-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-security-basic/jars/restx-security-basic-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/de.undercouch/bson4jackson/jars/bson4jackson-2.3.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-2.11.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.jongo/jongo/jars/jongo-1.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-factory-admin/jars/restx-factory-admin-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-admin/jars/restx-admin-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-webjars/jars/restx-webjars-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-validation/jars/restx-validation-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.1.1.GA.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/javax.el/el-api/jars/el-api-2.2.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.glassfish.web/el-impl/jars/el-impl-2.2.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-monitor-codahale/jars/restx-monitor-codahale-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.dropwizard.metrics/metrics-core/bundles/metrics-core-3.1.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.dropwizard.metrics/metrics-healthchecks/bundles/metrics-healthchecks-3.1.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/bundles/metrics-jvm-3.1.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.dropwizard.metrics/metrics-graphite/bundles/metrics-graphite-3.1.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-monitor-admin/jars/restx-monitor-admin-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-log-admin/jars/restx-log-admin-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-i18n-admin/jars/restx-i18n-admin-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-i18n/jars/restx-i18n-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-server-jetty/jars/restx-server-jetty-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-servlet/jars/restx-servlet-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.codehaus.janino/janino/jars/janino-2.6.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.codehaus.janino/commons-compiler/jars/commons-compiler-2.6.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-continuation/jars/jetty-continuation-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-webapp/jars/jetty-webapp-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-xml/jars/jetty-xml-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-servlets/jars/jetty-servlets-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.eclipse.jetty/jetty-client/jars/jetty-client-8.1.8.v20121106.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-apidocs/jars/restx-apidocs-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-jsonSchema/bundles/jackson-module-jsonSchema-2.3.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-specs-admin/jars/restx-specs-admin-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/io.restx/restx-specs-tests/jars/restx-specs-tests-0.34.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/junit/junit/jars/junit-4.11.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.assertj/assertj-core/bundles/assertj-core-1.6.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.github.kevinsawicki/http-request/jars/http-request-5.5.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.googlecode.java-diff-utils/diffutils/jars/diffutils-1.3.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.7.2.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.5.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.4.3.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.7.1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.7.1-1.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.7.0.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar"/>
+        <pathelement location="C:/Users/Guillaume/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.3.jar"/>
+    </path>
+    <path id="EbrithilAPI.classpath">
+        <pathelement location="bin"/>
+        <path refid="Ivy.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/test/resources">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="target/generated-sources/annotations">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/test/resources"/>
+            <src path="src/main/resources"/>
+            <src path="src/test/java"/>
+            <src path="target/generated-sources/annotations"/>
+            <classpath refid="EbrithilAPI.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AppServer">
+        <java classname="ebrithilapi.AppServer" failonerror="true" fork="yes">
+            <classpath refid="EbrithilAPI.classpath"/>
+        </java>
+    </target>
+    <target name="HelloResourceSpecTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="ebrithilapi.rest.HelloResourceSpecTest" todir="${junit.output.dir}"/>
+            <classpath refid="EbrithilAPI.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
