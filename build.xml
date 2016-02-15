@@ -3,7 +3,8 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="EbrithilAPI">
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="EbrithilAPI" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ac="antlib:net.sf.antcontrib">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../../../Tools/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
@@ -176,5 +177,186 @@
             </fileset>
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
+    </target>
+	
+	<!-- IVY Part -->
+	<property file="${basedir}/build.properties"/>
+    <property file="${basedir}/build.local.properties"/>
+
+    <path id="antcontrib.path">
+        <fileset dir="${antcontrib.dir}"/>
+    </path>
+    <taskdef resource="net/sf/antcontrib/antlib.xml" uri="antlib:net.sf.antcontrib" classpathref="antcontrib.path"/>
+
+
+    <!-- ... -->
+
+
+    <!--===================================================
+       Dependency management targets
+     =====================================================-->
+    <path id="ivy.lib.path">
+        <fileset dir="${ivy.lib.dir}" includes="*.jar"/>
+    </path>
+    <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+
+    <!-- Delete dependencies -->
+    <target name="clean-deps"
+            description="Delete all dependencies, including the directories they were extracted into."
+            depends="delete-dep-archive-dir, delete-dep-dirs">
+    </target>
+
+    <target name="delete-dep-archive-dir">
+        <delete dir="${deparchive.dir}"/>
+    </target>
+
+    <target name="delete-dep-dirs" depends="-get-dep-dir-list" if="dep-dir-list">
+        <ac:foreach list="${dep-dir-list}" target="delete-dep-dir" param="module" />
+    </target>
+
+    <target name="delete-dep-dir">
+        <ac:propertycopy name="dep-dir" from="dep.${module}.dir"/>
+        <delete dir="${dep-dir}"/>
+    </target>
+
+    <target name="clean-dep-cache"
+            description="Clear the Ivy cache.">
+        <ivy:cleancache />
+    </target>
+
+    <!-- Retrieve and extract dependencies -->
+    <target name="get-deps" description="Get dependencies from the Ivy repository.">
+        <ivy:retrieve pattern="${deparchive.dir}/[artifact]-[revision].[ext]"/>
+    </target>
+
+    <!-- Extract a dependency archive into a directory -->
+    <target name="extract-dep">
+        <ac:propertycopy property="extract-to-dir" from="dep.${dep.artifact}.dir" override="true" silent="true"/>
+        <echo message="Extracting ${dep.artifact}..."/>
+        <delete dir="${extract-to-dir}"/>
+        <ac:if>
+            <equals arg1="${dep.type}" arg2="tgz"/>
+            <then>
+                <untar src="${dep.to}" dest="${extract-to-dir}" compression="gzip"/>
+            </then>
+            <ac:elseif>
+                <equals arg1="${dep.type}" arg2="zip"/>
+                <then>
+                    <unzip src="${dep.to}" dest="${extract-to-dir}" compression="gzip"/>
+                </then>
+            </ac:elseif>
+            <ac:else>
+                <echo msg="I don't know how to extract artifacts of type '${dep.type}'."/>
+                <fail/>
+            </ac:else>
+        </ac:if>
+    </target>
+
+    <!-- Publish dependencies -->
+    <target name="publish-deps" description="Package up dependencies and publish to Ivy repository."
+            depends="-get-dep-dir-list, -get-ivy-ssh-login" if="dep-dir-list">
+        <ac:foreach list="${dep-dir-list}" target="publish-dep" param="pub.module" inheritall="true"/>
+    </target>
+
+    <!-- Get the list of dependency directories -->
+    <target name="-get-dep-dir-list">
+        <ac:propertyselector property="dep-dir-list" match="dep\.([^\.]*)\.dir" select="\1" />
+    </target>
+
+    <!-- Prompt the user for SSH login credentials for the Ivy repo -->
+    <target name="-get-ivy-ssh-login">
+        <echo message="Please enter SSH credentials for the Ivy repository."/>
+        <input message="Username: " addproperty="repo.ssh.user"/>
+        <input message="Password: " addproperty="repo.ssh.pass">
+            <handler classname="org.apache.tools.ant.input.SecureInputHandler"/>
+        </input>
+        <sshexec username="${repo.ssh.user}" password="${repo.ssh.pass}" host="${repo.server}" port="${repo.ssh.port}" command="test 0"/>
+    </target>
+
+    <!-- Publish a single dependency archive to the repository. -->
+    <target name="publish-dep" depends="package-dep, -check-dep-already-in-repo" if="dep-archive-exists" unless="dep-already-in-repo">
+        <echo>Publishing ${pub.module} to the repository...</echo>
+        <property name="pub.ivy.file" value="${module.dir}/ivy.xml"/>
+        <property name="pub.status" value="release"/>
+        <property name="pub.resolver" value="ssh"/>
+
+        <ivy:publish revision="${pub.version}" status="${pub.status}" resolver="${pub.resolver}"
+                     module="${pub.module}" organisation="${pub.org}"
+                     srcivypattern="${pub.ivy.file}"
+                     overwrite="false"
+                     update="true"
+                >
+            <artifacts pattern="${pub.archive.path}"/>
+        </ivy:publish>
+    </target>
+
+    <!-- Check if the current version of a dependency already exists in the repository. -->
+    <target name="-check-dep-already-in-repo" if="dep-archive-exists">
+        <ivy:listmodules organisation="${pub.org}" module="${pub.module}" revision="${pub.version}" property="dep-already-in-repo" value="true"/>
+        <ac:if>
+            <isset property="dep-already-in-repo"/>
+            <then>
+                <echo>${pub.module} ${pub.version} already exists in the repository.</echo>
+                <echo>Skipping publishing of ${pub.module}.</echo>
+            </then>
+        </ac:if>
+    </target>
+
+    <!-- Package up the dependency directory into an archive file -->
+    <target name="package-dep" depends="-parse-dep-ivy-file, -check-dep-archive-exists" if="dep-dir-exists" unless="dep-archive-exists">
+        <echo>Packaging ${pub.module}...</echo>
+        <mkdir dir="${deparchive.dir}"/>
+        <tar basedir="${module.dir}" destfile="${pub.archive.path}" compression="gzip"/>
+        <property name="dep-archive-exists" value="true"/>
+    </target>
+
+    <!-- Parse some properties out of the dependency's ivy.xml file -->
+    <target name="-parse-dep-ivy-file" depends="-check-dep-dir-exists" if="dep-dir-exists">
+        <exec executable="bash" outputproperty="pub.version" errorproperty="err" resultproperty="result">
+            <arg value="-c"/>
+            <arg value="grep 'revision=' ${module.dir}/ivy.xml | sed -e 's/.*revision=&quot;\(\S*\)&quot;.*/\1/g'"/>
+        </exec>
+        <exec executable="bash" outputproperty="pub.org" errorproperty="err" resultproperty="result">
+            <arg value="-c"/>
+            <arg value="grep 'organisation=' ${module.dir}/ivy.xml | sed -e 's/.*organisation=&quot;\(\S*\)&quot;.*/\1/g'"/>
+        </exec>
+
+        <fail message="Unable to determine ${pub.module} revision or organisation. Ensure the 'revision' and 'organisation' attributes are specified in ${module.dir}/ivy.xml.">
+            <condition>
+                <or>
+                    <equals arg1="${pub.version}" arg2=""/>
+                    <equals arg1="${pub.org}" arg2=""/>
+                </or>
+            </condition>
+        </fail>
+    </target>
+
+    <!-- Check if a dependency directory exists -->
+    <target name="-check-dep-dir-exists">
+        <ac:propertycopy property="module.dir" from="dep.${pub.module}.dir"/>
+        <ac:if>
+            <available file="${module.dir}" type="dir"/>
+            <then>
+                <property name="dep-dir-exists" value="true"/>
+            </then>
+            <else>
+                <echo>${module.dir} specified in build.properties does not exist.</echo>
+                <echo>Skipping ${pub.module}.</echo>
+            </else>
+        </ac:if>
+    </target>
+
+    <!-- Check if a dependency archive file already exists in the archive directory -->
+    <target name="-check-dep-archive-exists">
+        <property name="pub.archive.path" value="${deparchive.dir}/${pub.module}-${pub.version}.tgz"/>
+        <ac:if>
+            <available file="${pub.archive.path}"/>
+            <then>
+                <property name="dep-archive-exists" value="true"/>
+                <echo>${pub.archive.path} already exists.</echo>
+                <echo>Skipping packaging of ${pub.module}.</echo>
+                <echo>Delete the archive manually if you want to recreate it.</echo>
+            </then>
+        </ac:if>
     </target>
 </project>
