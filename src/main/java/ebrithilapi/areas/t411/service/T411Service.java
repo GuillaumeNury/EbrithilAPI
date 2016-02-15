@@ -84,7 +84,10 @@ public class T411Service {
 		for(TorrentRaw torrent : torrents){
 			Torrent t = Torrent.fromTorrentRaw(torrent);
 			t.cleanedName = chooser.getCleanName(torrent.name);
-			result.add(t);
+			
+			if(t.cleanedName != null){
+				result.add(t);
+			}
 		}
 		
 		return result;

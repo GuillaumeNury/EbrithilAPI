@@ -78,6 +78,10 @@ public class TorrentChooserService {
 			i = foundUselessElement ? i : i + 1;
 		}
 		
+		if(i == 0){
+			return null;
+		}
+		
 		// Remove last and/or first element if it is a year
 		List<String> elementToKeep;
 		String pattern = "^(18|19|20|21)[0-9]{2}$";
