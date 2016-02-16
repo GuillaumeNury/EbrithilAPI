@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2013 Xavier HANIN
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+    <groupId>io.restx</groupId>
+    <artifactId>restx-parent</artifactId>
+    <version>0.34</version>
+    <packaging>pom</packaging>
+    <url>http://restx.io</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/restx/restx/issues</url>
+    </issueManagement>
+    <developers>
+        <developer>
+            <id>xhanin</id>
+            <name>Xavier Hanin</name>
+            <email>xavier dot hanin at gmail dot com</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git@github.com:restx/restx.git</connection>
+        <developerConnection>scm:git:git@github.com:restx/restx.git</developerConnection>
+        <url>git@github.com:restx/restx</url>
+    </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.bsc.maven</groupId>
+                    <artifactId>maven-processor-plugin</artifactId>
+                    <version>2.2.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.17</version>
+                    <configuration>
+                        <argLine>-Duser.timezone=UTC</argLine>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-source</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.8</version>
+                <executions>
+                    <execution>
+                        <id>attach-docs</id>
+                        <!--
+                            we generate javadoc before packaging the jar to let a chance to apidocs doclet
+                            to generate comments dictionary to be packaged inside the jar as a resource
+                            -->
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>restx-common</module>
+        <module>restx-factory</module>
+        <module>restx-factory-testing</module>
+        <module>restx-barbarywatch</module>
+        <module>restx-classloader</module>
+        <module>restx-security-basic</module>
+        <module>restx-package</module>
+        <module>restx-build</module>
+        <module>restx-core</module>
+        <module>restx-core-annotation-processor</module>
+        <module>restx-annotation-processors-package</module>
+        <module>restx-admin</module>
+        <module>restx-i18n</module>
+        <module>restx-i18n-admin</module>
+        <module>restx-apidocs</module>
+        <module>restx-apidocs-doclet</module>
+        <module>restx-monitor-admin</module>
+        <module>restx-monitor-codahale</module>
+        <module>restx-factory-admin</module>
+        <module>restx-stats-admin</module>
+        <module>restx-log-admin</module>
+        <module>restx-specs-tests</module>
+        <module>restx-specs-admin</module>
+        <module>restx-specs-server</module>
+        <module>restx-jongo</module>
+        <module>restx-jongo-specs-tests</module>
+        <module>restx-servlet</module>
+        <module>restx-server-jetty</module>
+        <module>restx-server-tomcat</module>
+        <module>restx-server-simple</module>
+        <module>restx-server-testing</module>
+        <module>restx-samplest</module>
+        <!--
+        Shell modules should be built in the end because
+        they will have to generate some restx apps during tests
+        (every restx modules should have been installed when testing
+        these generated aps)
+        -->
+        <module>restx-core-shell</module>
+        <module>restx-shell</module>
+        <module>restx-shell-manager</module>
+        <module>restx-build-shell</module>
+        <module>restx-specs-shell</module>
+        <module>restx-validation</module>
+        <module>restx-webjars</module>
+    </modules>
+
+
+    <profiles>
+        <profile>
+            <id>java8</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <modules>
+                <module>restx-core-java8</module>
+                <module>restx-specs-tests-java8</module>
+                <module>restx-samplest-java8</module>
+            </modules>
+        </profile>
+    </profiles>
+</project>

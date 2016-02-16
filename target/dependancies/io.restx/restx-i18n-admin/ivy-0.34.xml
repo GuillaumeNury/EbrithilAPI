@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.restx"
+		module="restx-i18n-admin"
+		revision="0.34"
+		status="release"
+		publication="20150302205617"
+	>
+		<description homepage="" />
+		<m:properties__assertj-core.version>1.6.0</m:properties__assertj-core.version>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:properties__slf4j-api.version>1.7.5</m:properties__slf4j-api.version>
+		<m:properties__junit.version>4.11</m:properties__junit.version>
+		<m:properties__restx.version>0.34</m:properties__restx.version>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-source-plugin__2.2.1|null__maven-javadoc-plugin__2.8|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-source-plugin__2.2.1|null__maven-javadoc-plugin__2.8</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="restx-i18n-admin" type="jar" ext="jar" conf="master"/>
+		<artifact name="restx-i18n-admin" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="restx-i18n-admin" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="io.restx" name="restx-factory" rev="0.34" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.restx" name="restx-core" rev="0.34" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.restx" name="restx-core-annotation-processor" rev="0.34" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.restx" name="restx-i18n" rev="0.34" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.restx" name="restx-admin" rev="0.34" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.5" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.assertj" name="assertj-core" rev="1.6.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="io.restx" name="restx-webjars" rev="0.34" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+	</dependencies>
+</ivy-module>

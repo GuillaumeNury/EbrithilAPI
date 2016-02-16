@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="ebrithilapi"
+		module="ebrithilapi"
+		revision="0.1"
+		conf="default"
+		confs="default, runtime, test"
+		date="20160210234304"/>
+	<dependencies>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120613002206" resolver="public" artresolver="main" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="javadoc, default, system, compile, sources, provided, runtime, *, optional, master" position="79">
+				<metadata-artifact status="no" details="" size="8994" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-io\commons-io\ivy-2.4.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\commons-io\commons-io\ivy-2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-io\commons-io\jars\commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+					</artifact>
+					<artifact name="commons-io" type="source" ext="jar" extra-classifier="sources" status="no" details="" size="246635" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-io\commons-io\sources\commons-io-2.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"/>
+					</artifact>
+					<artifact name="commons-io" type="javadoc" ext="jar" extra-classifier="javadoc" status="no" details="" size="724124" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-io\commons-io\javadocs\commons-io-2.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.7.1-1" status="release" pubdate="20160204013156" resolver="public" artresolver="main" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="javadoc, default, system, compile, sources, provided, runtime, *, optional, master, master(*), runtime(*), compile(*)" position="77">
+				<metadata-artifact status="no" details="" size="8058" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.7.1-1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.7.1-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.7.1-1/jackson-databind-2.7.1-1.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="2.7.1-1" rev-constraint-default="2.7.1-1" rev-constraint-dynamic="2.7.1-1" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="source" ext="jar" extra-classifier="sources" status="no" details="" size="884031" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\sources\jackson-databind-2.7.1-1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.7.1-1/jackson-databind-2.7.1-1-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="javadoc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4557945" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\javadocs\jackson-databind-2.7.1-1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.7.1-1/jackson-databind-2.7.1-1-javadoc.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1199224" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.7.1-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.7.1-1/jackson-databind-2.7.1-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.7.1-1"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.7.1-1"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.3.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.7.1-1"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.7.0" status="release" pubdate="20160110064704" resolver="public" artresolver="main" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="78">
+				<metadata-artifact status="no" details="" size="7013" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.7.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="default, compile, runtime, master" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="2.7.1-1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="50894" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.3.3" status="release" pubdate="20140410183819" resolver="public" artresolver="main" evicted="latest-revision" evicted-reason="" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="5240" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.3.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.3/jackson-annotations-2.3.3.pom"/>
+				<evicted-by rev="2.7.0"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3.3"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.3"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.7.1" status="release" pubdate="20160202071020" resolver="public" artresolver="main" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="sources, runtime(*), provided, runtime, *, optional, compile(*), master, javadoc, default, master(*), system, compile" position="76">
+				<metadata-artifact status="no" details="" size="7454" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.7.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.7.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.1/jackson-core-2.7.1.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="default, compile, runtime, master" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="2.7.1-1"/>
+				<artifacts>
+					<artifact name="jackson-core" type="source" ext="jar" extra-classifier="sources" status="no" details="" size="265042" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\sources\jackson-core-2.7.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.1/jackson-core-2.7.1-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="javadoc" ext="jar" extra-classifier="javadoc" status="no" details="" size="905395" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\javadocs\jackson-core-2.7.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.1/jackson-core-2.7.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="252303" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.1/jackson-core-2.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.7.1"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.7.1"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.3.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.7.1"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="de.undercouch" name="bson4jackson" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.5.1" status="release" pubdate="20150911145604" resolver="public" artresolver="main" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="javadoc, default, system, compile, sources, provided, runtime, *, optional, master" position="72">
+				<metadata-artifact status="no" details="" size="10853" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="httpclient" type="source" ext="jar" extra-classifier="sources" status="no" details="" size="706648" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpclient\sources\httpclient-4.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1-sources.jar"/>
+					</artifact>
+					<artifact name="httpclient" type="javadoc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2342361" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpclient\javadocs\httpclient-4.5.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="732765" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.5.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.9" status="release" pubdate="20131221045739" resolver="public" artresolver="main" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="75">
+				<metadata-artifact status="no" details="" size="10522" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-codec\commons-codec\ivy-1.9.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\commons-codec\commons-codec\ivy-1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="default, compile, runtime, master" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="263965" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.4.3" status="release" pubdate="20150904204029" resolver="public" artresolver="main" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="73">
+				<metadata-artifact status="no" details="" size="7983" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.4.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="default, compile, runtime, master" rev="4.4.3" rev-constraint-default="4.4.3" rev-constraint-dynamic="4.4.3" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="326594" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.4.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20140705201228" resolver="public" artresolver="main" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="74">
+				<metadata-artifact status="no" details="" size="12036" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-logging\commons-logging\ivy-1.2.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\commons-logging\commons-logging\ivy-1.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="4.5.1"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="61829" time="0" location="C:\Users\Guillaume\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jsoup" name="jsoup">
+			<revision name="1.7.2" status="release" pubdate="20130128013049" resolver="public" artresolver="main" homepage="http://jsoup.org/" downloaded="false" searched="false" default="false" conf="javadoc, default, system, compile, sources, provided, runtime, *, optional, master" position="71">
+				<license name="The MIT License" url="http://jsoup.com/license"/>
+				<metadata-artifact status="no" details="" size="3089" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jsoup\jsoup\ivy-1.7.2.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.jsoup\jsoup\ivy-1.7.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jsoup" type="javadoc" ext="jar" extra-classifier="javadoc" status="no" details="" size="528600" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jsoup\jsoup\javadocs\jsoup-1.7.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.7.2/jsoup-1.7.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="jsoup" type="source" ext="jar" extra-classifier="sources" status="no" details="" size="118801" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jsoup\jsoup\sources\jsoup-1.7.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.7.2/jsoup-1.7.2-sources.jar"/>
+					</artifact>
+					<artifact name="jsoup" type="jar" ext="jar" status="no" details="" size="293671" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jsoup\jsoup\jars\jsoup-1.7.2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-specs-admin">
+			<revision name="0.34" status="release" pubdate="20150302210006" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="64">
+				<metadata-artifact status="no" details="" size="3907" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-specs-admin\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-specs-admin\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-specs-admin/0.34/restx-specs-admin-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-specs-admin" type="jar" ext="jar" status="no" details="" size="49212" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-specs-admin\jars\restx-specs-admin-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-apidocs">
+			<revision name="0.34" status="release" pubdate="20150302205629" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="62">
+				<metadata-artifact status="no" details="" size="4278" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-apidocs\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-apidocs\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-apidocs/0.34/restx-apidocs-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-apidocs" type="jar" ext="jar" status="no" details="" size="60897" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-apidocs\jars\restx-apidocs-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.module" name="jackson-module-jsonSchema">
+			<revision name="2.3.3" status="release" pubdate="20140410192607" resolver="public" artresolver="main" homepage="https://github.com/FasterXML/jackson-module-jsonSchema" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="63">
+				<metadata-artifact status="no" details="" size="6413" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.module\jackson-module-jsonSchema\ivy-2.3.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.module\jackson-module-jsonSchema\ivy-2.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jsonSchema/2.3.3/jackson-module-jsonSchema-2.3.3.pom"/>
+				<caller organisation="io.restx" name="restx-apidocs" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jackson-module-jsonSchema" type="bundle" ext="jar" status="no" details="" size="56736" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.module\jackson-module-jsonSchema\bundles\jackson-module-jsonSchema-2.3.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-i18n-admin">
+			<revision name="0.34" status="release" pubdate="20150302205617" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="43">
+				<metadata-artifact status="no" details="" size="4753" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-i18n-admin\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-i18n-admin\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-i18n-admin/0.34/restx-i18n-admin-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-i18n-admin" type="jar" ext="jar" status="no" details="" size="24284" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-i18n-admin\jars\restx-i18n-admin-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-i18n">
+			<revision name="0.34" status="release" pubdate="20150302205551" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="44">
+				<metadata-artifact status="no" details="" size="4564" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-i18n\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-i18n\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-i18n/0.34/restx-i18n-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-i18n" type="jar" ext="jar" status="no" details="" size="26971" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-i18n\jars\restx-i18n-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-specs-tests">
+			<revision name="0.34" status="release" pubdate="20150302205513" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="65">
+				<metadata-artifact status="no" details="" size="4770" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-specs-tests\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-specs-tests\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-specs-tests/0.34/restx-specs-tests-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-specs-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-specs-tests" type="jar" ext="jar" status="no" details="" size="106096" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-specs-tests\jars\restx-specs-tests-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-server-jetty">
+			<revision name="0.34" status="release" pubdate="20150302205438" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="45">
+				<metadata-artifact status="no" details="" size="4918" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-server-jetty\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-server-jetty\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-server-jetty/0.34/restx-server-jetty-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-server-jetty" type="jar" ext="jar" status="no" details="" size="12347" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-server-jetty\jars\restx-server-jetty-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlets">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106161729" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="60">
+				<metadata-artifact status="no" details="" size="9487" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-servlets\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-servlets\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlets/8.1.8.v20121106/jetty-servlets-8.1.8.v20121106.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jetty-servlets" type="jar" ext="jar" status="no" details="" size="88733" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-servlets\jars\jetty-servlets-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-client">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106161059" resolver="public" artresolver="main" homepage="{$jetty.url}" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="61">
+				<metadata-artifact status="no" details="" size="9247" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-client\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-client\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/8.1.8.v20121106/jetty-client-8.1.8.v20121106.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-client" type="jar" ext="jar" status="no" details="" size="87621" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-client\jars\jetty-client-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-webapp">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106161247" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="58">
+				<metadata-artifact status="no" details="" size="8909" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-webapp\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-webapp\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/8.1.8.v20121106/jetty-webapp-8.1.8.v20121106.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jetty-webapp" type="jar" ext="jar" status="no" details="" size="110031" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-webapp\jars\jetty-webapp-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-xml">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106161117" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="59">
+				<metadata-artifact status="no" details="" size="8551" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-xml\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-xml\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/8.1.8.v20121106/jetty-xml-8.1.8.v20121106.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-webapp" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-xml" type="jar" ext="jar" status="no" details="" size="39115" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-xml\jars\jetty-xml-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlet">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106160636" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="56">
+				<metadata-artifact status="no" details="" size="8739" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-servlet\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-servlet\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/8.1.8.v20121106/jetty-servlet-8.1.8.v20121106.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="0.34"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-webapp" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-servlet" type="jar" ext="jar" status="no" details="" size="97228" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-servlet\jars\jetty-servlet-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-security">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106160614" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="57">
+				<metadata-artifact status="no" details="" size="8637" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-security\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-security\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/8.1.8.v20121106/jetty-security-8.1.8.v20121106.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="0.34"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlet" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-security" type="jar" ext="jar" status="no" details="" size="89854" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-security\jars\jetty-security-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-server">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106160508" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="50">
+				<metadata-artifact status="no" details="" size="9229" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-server\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-server\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.8.v20121106/jetty-server-8.1.8.v20121106.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="0.34"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-security" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-server" type="jar" ext="jar" status="no" details="" size="338985" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-server\jars\jetty-server-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-http">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106160057" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="53">
+				<metadata-artifact status="no" details="" size="8678" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-http\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-http\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.8.v20121106/jetty-http-8.1.8.v20121106.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-client" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-http" type="jar" ext="jar" status="no" details="" size="94481" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-http\jars\jetty-http-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-io">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106160031" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="54">
+				<metadata-artifact status="no" details="" size="8536" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-io\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-io\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.8.v20121106/jetty-io-8.1.8.v20121106.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-http" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-io" type="jar" ext="jar" status="no" details="" size="103293" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-io\jars\jetty-io-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106155929" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="55">
+				<metadata-artifact status="no" details="" size="8909" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-util\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-util\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.8.v20121106/jetty-util-8.1.8.v20121106.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-xml" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="0.34"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-io" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-util" type="jar" ext="jar" status="no" details="" size="280529" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-util\jars\jetty-util-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-continuation">
+			<revision name="8.1.8.v20121106" status="release" pubdate="20121106160111" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="52">
+				<metadata-artifact status="no" details="" size="8650" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-continuation\ivy-8.1.8.v20121106.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-continuation\ivy-8.1.8.v20121106.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.8.v20121106/jetty-continuation-8.1.8.v20121106.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="8.1.8.v20121106" rev-constraint-default="8.1.8.v20121106" rev-constraint-dynamic="8.1.8.v20121106" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="jetty-continuation" type="jar" ext="jar" status="no" details="" size="21138" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty\jetty-continuation\jars\jetty-continuation-8.1.8.v20121106.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.orbit" name="javax.servlet">
+			<revision name="3.0.0.v201112011016" status="release" pubdate="20111207204915" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="51">
+				<metadata-artifact status="no" details="" size="3255" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty.orbit\javax.servlet\ivy-3.0.0.v201112011016.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty.orbit\javax.servlet\ivy-3.0.0.v201112011016.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="3.0.0.v201112011016" rev-constraint-default="3.0.0.v201112011016" rev-constraint-dynamic="3.0.0.v201112011016" callerrev="8.1.8.v20121106"/>
+				<artifacts>
+					<artifact name="javax.servlet" type="orbit" ext="jar" status="no" details="" size="200387" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.eclipse.jetty.orbit\javax.servlet\orbits\javax.servlet-3.0.0.v201112011016.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-servlet">
+			<revision name="0.34" status="release" pubdate="20150302205424" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="47">
+				<metadata-artifact status="no" details="" size="3914" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-servlet\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-servlet\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-servlet/0.34/restx-servlet-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-servlet" type="jar" ext="jar" status="no" details="" size="23763" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-servlet\jars\restx-servlet-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="javax.servlet-api">
+			<revision name="3.0.1" status="release" pubdate="20110712214053" resolver="public" artresolver="main" homepage="http://servlet-spec.java.net" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="46">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="3955" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.servlet\javax.servlet-api\ivy-3.0.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\javax.servlet\javax.servlet-api\ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.pom"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="javax.servlet-api" type="jar" ext="jar" status="no" details="" size="85353" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.servlet\javax.servlet-api\jars\javax.servlet-api-3.0.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.java-diff-utils" name="diffutils">
+			<revision name="1.3.0" status="release" pubdate="20130304160716" resolver="public" artresolver="main" homepage="http://code.google.com/p/java-diff-utils/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="70">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3360" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.googlecode.java-diff-utils\diffutils\ivy-1.3.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.googlecode.java-diff-utils\diffutils\ivy-1.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.pom"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="diffutils" type="jar" ext="jar" status="no" details="" size="34130" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.googlecode.java-diff-utils\diffutils\jars\diffutils-1.3.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.kevinsawicki" name="http-request">
+			<revision name="5.5" status="release" pubdate="20131108183339" resolver="public" artresolver="main" homepage="https://github.com/kevinsawicki/http-request" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="69">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3963" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.github.kevinsawicki\http-request\ivy-5.5.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.github.kevinsawicki\http-request\ivy-5.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/kevinsawicki/http-request/5.5/http-request-5.5.pom"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="5.5" rev-constraint-default="5.5" rev-constraint-dynamic="5.5" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="http-request" type="jar" ext="jar" status="no" details="" size="33177" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.github.kevinsawicki\http-request\jars\http-request-5.5.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-log-admin">
+			<revision name="0.34" status="release" pubdate="20150302205922" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="40">
+				<metadata-artifact status="no" details="" size="4264" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-log-admin\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-log-admin\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-log-admin/0.34/restx-log-admin-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-log-admin" type="jar" ext="jar" status="no" details="" size="22366" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-log-admin\jars\restx-log-admin-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.0.13" status="release" pubdate="20130510143446" resolver="public" artresolver="main" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="41">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="11967" time="0" location="C:\Users\Guillaume\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.0.13.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.0.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.pom"/>
+				<caller organisation="io.restx" name="restx-log-admin" conf="default, compile, runtime, master" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="0.34"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="264600" time="0" location="C:\Users\Guillaume\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.0.13.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.0.13" status="release" pubdate="20130510143314" resolver="public" artresolver="main" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="42">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="9809" time="0" location="C:\Users\Guillaume\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.0.13.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.0.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0.13"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="418870" time="0" location="C:\Users\Guillaume\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.0.13.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.janino" name="janino">
+			<revision name="2.6.1" status="release" pubdate="20120121035803" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="48">
+				<metadata-artifact status="no" details="" size="5256" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.codehaus.janino\janino\ivy-2.6.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.codehaus.janino\janino\ivy-2.6.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/2.6.1/janino-2.6.1.pom"/>
+				<caller organisation="io.restx" name="restx-servlet" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="janino" type="jar" ext="jar" status="no" details="" size="602320" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.codehaus.janino\janino\jars\janino-2.6.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.janino" name="commons-compiler">
+			<revision name="2.6.1" status="release" pubdate="20120121035703" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="49">
+				<metadata-artifact status="no" details="" size="5028" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.codehaus.janino\commons-compiler\ivy-2.6.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.codehaus.janino\commons-compiler\ivy-2.6.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/2.6.1/commons-compiler-2.6.1.pom"/>
+				<caller organisation="org.codehaus.janino" name="janino" conf="compile, runtime" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="2.6.1"/>
+				<artifacts>
+					<artifact name="commons-compiler" type="jar" ext="jar" status="no" details="" size="29924" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.codehaus.janino\commons-compiler\jars\commons-compiler-2.6.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-monitor-admin">
+			<revision name="0.34" status="release" pubdate="20150302205736" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="39">
+				<metadata-artifact status="no" details="" size="4877" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-monitor-admin\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-monitor-admin\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-monitor-admin/0.34/restx-monitor-admin-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-monitor-admin" type="jar" ext="jar" status="no" details="" size="49010" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-monitor-admin\jars\restx-monitor-admin-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-monitor-codahale">
+			<revision name="0.34" status="release" pubdate="20150302205721" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="33">
+				<metadata-artifact status="no" details="" size="4612" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-monitor-codahale\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-monitor-codahale\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-monitor-codahale/0.34/restx-monitor-codahale-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-monitor-codahale" type="jar" ext="jar" status="no" details="" size="9148" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-monitor-codahale\jars\restx-monitor-codahale-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-graphite">
+			<revision name="3.1.0" status="release" pubdate="20140904170228" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="38">
+				<metadata-artifact status="no" details="" size="5444" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-graphite\ivy-3.1.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-graphite\ivy-3.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-graphite/3.1.0/metrics-graphite-3.1.0.pom"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="metrics-graphite" type="bundle" ext="jar" status="no" details="" size="20638" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-graphite\bundles\metrics-graphite-3.1.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-healthchecks">
+			<revision name="3.1.0" status="release" pubdate="20140904170201" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="36">
+				<metadata-artifact status="no" details="" size="5298" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-healthchecks\ivy-3.1.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-healthchecks\ivy-3.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-healthchecks/3.1.0/metrics-healthchecks-3.1.0.pom"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="metrics-healthchecks" type="bundle" ext="jar" status="no" details="" size="10167" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-healthchecks\bundles\metrics-healthchecks-3.1.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-jvm">
+			<revision name="3.1.0" status="release" pubdate="20140904170153" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="37">
+				<metadata-artifact status="no" details="" size="5227" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-jvm\ivy-3.1.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-jvm\ivy-3.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.0/metrics-jvm-3.1.0.pom"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="metrics-jvm" type="bundle" ext="jar" status="no" details="" size="35907" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-jvm\bundles\metrics-jvm-3.1.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-core">
+			<revision name="3.1.0" status="release" pubdate="20140904170139" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="34">
+				<metadata-artifact status="no" details="" size="5213" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-core\ivy-3.1.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-core\ivy-3.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.0/metrics-core-3.1.0.pom"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-graphite" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="3.1.0"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-jvm" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="3.1.0"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="metrics-core" type="bundle" ext="jar" status="no" details="" size="111908" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.dropwizard.metrics\metrics-core\bundles\metrics-core-3.1.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404131248" resolver="public" artresolver="main" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="35">
+				<metadata-artifact status="no" details="" size="4802" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.7.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-classloader" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-graphite" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.0"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
+				<caller organisation="io.restx" name="restx-i18n" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-webjars" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-jvm" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.0"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.0"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-healthchecks" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130325215215" resolver="public" artresolver="main" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4703" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.5.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-classloader" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
+				<caller organisation="io.restx" name="restx-i18n" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-webjars" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.34"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-validation">
+			<revision name="0.34" status="release" pubdate="20150302210327" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="27">
+				<metadata-artifact status="no" details="" size="4077" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-validation\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-validation\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-validation/0.34/restx-validation-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-validation" type="jar" ext="jar" status="no" details="" size="6445" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-validation\jars\restx-validation-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.web" name="el-impl">
+			<revision name="2.2" status="release" pubdate="20110803170238" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="32">
+				<metadata-artifact status="no" details="" size="3112" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.glassfish.web\el-impl\ivy-2.2.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.glassfish.web\el-impl\ivy-2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/web/el-impl/2.2/el-impl-2.2.pom"/>
+				<caller organisation="io.restx" name="restx-validation" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="el-impl" type="jar" ext="jar" status="no" details="" size="109269" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.glassfish.web\el-impl\jars\el-impl-2.2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.el" name="el-api">
+			<revision name="2.2" status="release" pubdate="20100520024938" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="31">
+				<metadata-artifact status="no" details="" size="2884" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.el\el-api\ivy-2.2.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\javax.el\el-api\ivy-2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/el/el-api/2.2/el-api-2.2.pom"/>
+				<caller organisation="org.glassfish.web" name="el-impl" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.2"/>
+				<caller organisation="io.restx" name="restx-validation" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="el-api" type="jar" ext="jar" status="no" details="" size="33936" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.el\el-api\jars\el-api-2.2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-validator">
+			<revision name="5.0.1.Final" status="release" pubdate="20130430214625" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="28">
+				<metadata-artifact status="no" details="" size="24161" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.hibernate\hibernate-validator\ivy-5.0.1.Final.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.hibernate\hibernate-validator\ivy-5.0.1.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.pom"/>
+				<caller organisation="io.restx" name="restx-validation" conf="default, compile, runtime, master" rev="5.0.1.Final" rev-constraint-default="5.0.1.Final" rev-constraint-dynamic="5.0.1.Final" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="hibernate-validator" type="jar" ext="jar" status="no" details="" size="572935" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.1.Final.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml" name="classmate">
+			<revision name="0.8.0" status="release" pubdate="20121121055334" resolver="public" artresolver="main" homepage="http://github.com/cowtowncoder/java-classmate" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3477" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml\classmate\ivy-0.8.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml\classmate\ivy-0.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/classmate/0.8.0/classmate-0.8.0.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="5.0.1.Final"/>
+				<artifacts>
+					<artifact name="classmate" type="bundle" ext="jar" status="no" details="" size="59706" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-0.8.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.logging" name="jboss-logging">
+			<revision name="3.1.1.GA" status="release" pubdate="20120425005934" resolver="public" artresolver="main" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="29">
+				<license name="GNU Lesser General Public License, version 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
+				<metadata-artifact status="no" details="" size="8076" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jboss.logging\jboss-logging\ivy-3.1.1.GA.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.jboss.logging\jboss-logging\ivy-3.1.1.GA.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="3.1.1.GA" rev-constraint-default="3.1.1.GA" rev-constraint-dynamic="3.1.1.GA" callerrev="5.0.1.Final"/>
+				<artifacts>
+					<artifact name="jboss-logging" type="jar" ext="jar" status="no" details="" size="60796" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.1.1.GA.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-factory-admin">
+			<revision name="0.34" status="release" pubdate="20150302205750" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="24">
+				<metadata-artifact status="no" details="" size="3911" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-factory-admin\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-factory-admin\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-factory-admin/0.34/restx-factory-admin-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-factory-admin" type="jar" ext="jar" status="no" details="" size="36436" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-factory-admin\jars\restx-factory-admin-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-admin">
+			<revision name="0.34" status="release" pubdate="20150302205400" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="25">
+				<metadata-artifact status="no" details="" size="4040" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-admin\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-admin\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-admin/0.34/restx-admin-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-apidocs" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-log-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-specs-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-admin" type="jar" ext="jar" status="no" details="" size="188599" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-admin\jars\restx-admin-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-webjars">
+			<revision name="0.34" status="release" pubdate="20150302205320" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="26">
+				<metadata-artifact status="no" details="" size="4344" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-webjars\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-webjars\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-webjars/0.34/restx-webjars-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-apidocs" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-log-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-specs-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-webjars" type="jar" ext="jar" status="no" details="" size="1918091" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-webjars\jars\restx-webjars-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-jongo">
+			<revision name="0.34" status="release" pubdate="20150302210101" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="0">
+				<metadata-artifact status="no" details="" size="5830" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-jongo\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-jongo\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-jongo/0.34/restx-jongo-0.34.pom"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-jongo" type="jar" ext="jar" status="no" details="" size="55468" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-jongo\jars\restx-jongo-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jongo" name="jongo">
+			<revision name="1.0" status="release" pubdate="20131203171624" resolver="public" artresolver="main" homepage="http://www.jongo.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="23">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5668" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jongo\jongo\ivy-1.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.jongo\jongo\ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jongo/jongo/1.0/jongo-1.0.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jongo" type="jar" ext="jar" status="no" details="" size="80979" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.jongo\jongo\jars\jongo-1.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mongodb" name="mongo-java-driver">
+			<revision name="2.11.3" status="release" pubdate="20130912211233" resolver="public" artresolver="main" homepage="http://www.mongodb.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2619" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.mongodb\mongo-java-driver\ivy-2.11.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.mongodb\mongo-java-driver\ivy-2.11.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.11.3" rev-constraint-default="2.11.3" rev-constraint-dynamic="2.11.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="mongo-java-driver" type="jar" ext="jar" status="no" details="" size="419054" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.mongodb\mongo-java-driver\jars\mongo-java-driver-2.11.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="de.undercouch" name="bson4jackson">
+			<revision name="2.3.1" status="release" pubdate="20131221163820" resolver="public" artresolver="main" homepage="http://www.michel-kraemer.com" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3151" time="0" location="C:\Users\Guillaume\.ivy2\cache\de.undercouch\bson4jackson\ivy-2.3.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\de.undercouch\bson4jackson\ivy-2.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/de/undercouch/bson4jackson/2.3.1/bson4jackson-2.3.1.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.1" rev-constraint-default="2.3.1" rev-constraint-dynamic="2.3.1" callerrev="0.34"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="bson4jackson" type="jar" ext="jar" status="no" details="" size="57200" time="0" location="C:\Users\Guillaume\.ivy2\cache\de.undercouch\bson4jackson\jars\bson4jackson-2.3.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.2.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3.1"/>
+				<caller organisation="org.jongo" name="jongo" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-security-basic">
+			<revision name="0.34" status="release" pubdate="20150302204712" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<metadata-artifact status="no" details="" size="4295" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-security-basic\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-security-basic\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-security-basic/0.34/restx-security-basic-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="restx-security-basic" type="jar" ext="jar" status="no" details="" size="45576" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-security-basic\jars\restx-security-basic-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mindrot" name="jbcrypt">
+			<revision name="0.3m" status="release" pubdate="20100517044639" resolver="public" artresolver="main" homepage="http://www.mindrot.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="20">
+				<license name="ISC/BSD License"/>
+				<metadata-artifact status="no" details="" size="3041" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.mindrot\jbcrypt\ivy-0.3m.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.mindrot\jbcrypt\ivy-0.3m.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom"/>
+				<caller organisation="io.restx" name="restx-security-basic" conf="default, compile, runtime, master" rev="0.3m" rev-constraint-default="0.3m" rev-constraint-dynamic="0.3m" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jbcrypt" type="jar" ext="jar" status="no" details="" size="17750" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.mindrot\jbcrypt\jars\jbcrypt-0.3m.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-core-annotation-processor">
+			<revision name="0.34" status="release" pubdate="20150302204657" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="18">
+				<metadata-artifact status="no" details="" size="4110" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-core-annotation-processor\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-core-annotation-processor\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-core-annotation-processor/0.34/restx-core-annotation-processor-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-apidocs" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-log-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-security-basic" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-webjars" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-core-annotation-processor" type="jar" ext="jar" status="no" details="" size="32260" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-core-annotation-processor\jars\restx-core-annotation-processor-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-core">
+			<revision name="0.34" status="release" pubdate="20150302204632" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<metadata-artifact status="no" details="" size="6490" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-core\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-core\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-core/0.34/restx-core-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core-annotation-processor" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-apidocs" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-log-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-specs-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-servlet" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-security-basic" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-webjars" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-core" type="jar" ext="jar" status="no" details="" size="375042" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-core\jars\restx-core-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.13" status="release" pubdate="20130905200959" resolver="public" artresolver="main" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3634" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.yaml\snakeyaml\ivy-1.13.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.yaml\snakeyaml\ivy-1.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.13/snakeyaml-1.13.pom"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="no" details="" size="273449" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.validation" name="validation-api">
+			<revision name="1.1.0.Final" status="release" pubdate="20130410150303" resolver="public" artresolver="main" homepage="http://beanvalidation.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3301" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.validation\validation-api\ivy-1.1.0.Final.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\javax.validation\validation-api\ivy-1.1.0.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="5.0.1.Final"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="validation-api" type="jar" ext="jar" status="no" details="" size="63777" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-apidocs-doclet">
+			<revision name="0.34" status="release" pubdate="20150302204609" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+				<metadata-artifact status="no" details="" size="4734" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-apidocs-doclet\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-apidocs-doclet\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-apidocs-doclet/0.34/restx-apidocs-doclet-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-apidocs-doclet" type="jar" ext="jar" status="no" details="" size="12913" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-apidocs-doclet\jars\restx-apidocs-doclet-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-classloader">
+			<revision name="0.34" status="release" pubdate="20150302204558" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<metadata-artifact status="no" details="" size="5210" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-classloader\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-classloader\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-classloader/0.34/restx-classloader-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-classloader" type="jar" ext="jar" status="no" details="" size="33103" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-classloader\jars\restx-classloader-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava">
+			<revision name="2.3.3" status="release" pubdate="20140410221125" resolver="public" artresolver="main" homepage="http://wiki.fasterxml.com/JacksonModuleGuava" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="13">
+				<metadata-artifact status="no" details="" size="6846" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-guava\ivy-2.3.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-guava\ivy-2.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.3.3/jackson-datatype-guava-2.3.3.pom"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jackson-datatype-guava" type="bundle" ext="jar" status="no" details="" size="60153" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-guava\bundles\jackson-datatype-guava-2.3.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda">
+			<revision name="2.3.3" status="release" pubdate="20140410221527" resolver="public" artresolver="main" homepage="http://wiki.fasterxml.com/JacksonModuleJoda" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="6946" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-joda\ivy-2.3.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-joda\ivy-2.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.3.3/jackson-datatype-joda-2.3.3.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jackson-datatype-joda" type="bundle" ext="jar" status="no" details="" size="50275" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-joda\bundles\jackson-datatype-joda-2.3.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-factory">
+			<revision name="0.34" status="release" pubdate="20150302204509" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<metadata-artifact status="no" details="" size="4959" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-factory\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-factory\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-factory/0.34/restx-factory-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-jongo" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core-annotation-processor" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-monitor-codahale" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="ebrithilapi" name="ebrithilapi" conf="default" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.1"/>
+				<caller organisation="io.restx" name="restx-monitor-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-apidocs" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-log-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-server-jetty" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-admin" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-i18n" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-validation" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-security-basic" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-webjars" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-factory" type="jar" ext="jar" status="no" details="" size="146439" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-factory\jars\restx-factory-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014013500" resolver="public" artresolver="main" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2604" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.inject\javax.inject\ivy-1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\javax.inject\javax.inject\ivy-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="io.restx" name="restx-classloader" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="C:\Users\Guillaume\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.restx" name="restx-common">
+			<revision name="0.34" status="release" pubdate="20150302204451" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<metadata-artifact status="no" details="" size="4488" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-common\ivy-0.34.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-common\ivy-0.34.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/restx/restx-common/0.34/restx-common-0.34.pom"/>
+				<caller organisation="io.restx" name="restx-classloader" conf="compile, runtime" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="0.34" rev-constraint-default="0.34" rev-constraint-dynamic="0.34" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="restx-common" type="jar" ext="jar" status="no" details="" size="65158" time="0" location="C:\Users\Guillaume\.ivy2\cache\io.restx\restx-common\jars\restx-common-0.34.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.assertj" name="assertj-core">
+			<revision name="1.6.0" status="release" pubdate="20140315113257" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="68">
+				<metadata-artifact status="no" details="" size="5189" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.assertj\assertj-core\ivy-1.6.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.assertj\assertj-core\ivy-1.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/assertj/assertj-core/1.6.0/assertj-core-1.6.0.pom"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="assertj-core" type="bundle" ext="jar" status="no" details="" size="604378" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.assertj\assertj-core\bundles\assertj-core-1.6.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.samskivert" name="jmustache">
+			<revision name="1.8" status="release" pubdate="20130405200413" resolver="public" artresolver="main" homepage="http://github.com/samskivert/jmustache" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<license name="The (New) BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3854" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.samskivert\jmustache\ivy-1.8.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.samskivert\jmustache\ivy-1.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/samskivert/jmustache/1.8/jmustache-1.8.pom"/>
+				<caller organisation="io.restx" name="restx-common" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="jmustache" type="bundle" ext="jar" status="no" details="" size="54434" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.samskivert\jmustache\bundles\jmustache-1.8.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.11" status="release" pubdate="20121114202147" resolver="public" artresolver="main" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="66">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2980" time="0" location="C:\Users\Guillaume\.ivy2\cache\junit\junit\ivy-4.11.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\junit\junit\ivy-4.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom"/>
+				<caller organisation="io.restx" name="restx-specs-tests" conf="compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="4.11" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="245039" time="0" location="C:\Users\Guillaume\.ivy2\cache\junit\junit\jars\junit-4.11.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.3" status="release" pubdate="20120709230802" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="67">
+				<metadata-artifact status="no" details="" size="2622" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.hamcrest\hamcrest-core\ivy-1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+				<caller organisation="junit" name="junit" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.11"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="45024" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reflections" name="reflections">
+			<revision name="0.9.9-RC1" status="release" pubdate="20130323145936" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="5">
+				<metadata-artifact status="no" details="" size="3992" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.reflections\reflections\ivy-0.9.9-RC1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.reflections\reflections\ivy-0.9.9-RC1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.9-RC1/reflections-0.9.9-RC1.pom"/>
+				<caller organisation="io.restx" name="restx-common" conf="compile, runtime" rev="0.9.9-RC1" rev-constraint-default="0.9.9-RC1" rev-constraint-dynamic="0.9.9-RC1" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="0.9.9-RC1" rev-constraint-default="0.9.9-RC1" rev-constraint-dynamic="0.9.9-RC1" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="0.9.9-RC1" rev-constraint-default="0.9.9-RC1" rev-constraint-dynamic="0.9.9-RC1" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="reflections" type="jar" ext="jar" status="no" details="" size="121013" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.9-RC1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="dom4j" name="dom4j">
+			<revision name="1.6.1" status="release" pubdate="20060210133318" resolver="public" artresolver="main" homepage="http://dom4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="3786" time="0" location="C:\Users\Guillaume\.ivy2\cache\dom4j\dom4j\ivy-1.6.1.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\dom4j\dom4j\ivy-1.6.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.9.9-RC1"/>
+				<artifacts>
+					<artifact name="dom4j" type="jar" ext="jar" status="no" details="" size="313898" time="0" location="C:\Users\Guillaume\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.0.b2" status="release" pubdate="20070209013046" resolver="public" artresolver="main" homepage="http://xml.apache.org/commons/#external" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3045" time="0" location="C:\Users\Guillaume\.ivy2\cache\xml-apis\xml-apis\ivy-1.0.b2.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\xml-apis\xml-apis\ivy-1.0.b2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom"/>
+				<caller organisation="dom4j" name="dom4j" conf="compile, runtime" rev="1.0.b2" rev-constraint-default="1.0.b2" rev-constraint-dynamic="1.0.b2" callerrev="1.6.1"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="no" details="" size="109318" time="0" location="C:\Users\Guillaume\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.0.b2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.16.1-GA" status="release" pubdate="20120306163712" resolver="public" artresolver="main" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3288" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.javassist\javassist\ivy-3.16.1-GA.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\org.javassist\javassist\ivy-3.16.1-GA.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.16.1-GA/javassist-3.16.1-GA.pom"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="3.16.1-GA" rev-constraint-default="3.16.1-GA" rev-constraint-dynamic="3.16.1-GA" callerrev="0.9.9-RC1"/>
+				<artifacts>
+					<artifact name="javassist" type="jar" ext="jar" status="no" details="" size="659343" time="0" location="C:\Users\Guillaume\.ivy2\cache\org.javassist\javassist\jars\javassist-3.16.1-GA.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.3" status="release" pubdate="20130816193125" resolver="public" artresolver="main" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6622" time="0" location="C:\Users\Guillaume\.ivy2\cache\joda-time\joda-time\ivy-2.3.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\joda-time\joda-time\ivy-2.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom"/>
+				<caller organisation="io.restx" name="restx-common" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.34"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-classloader" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="581571" time="0" location="C:\Users\Guillaume\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-joda" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="2.3.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="17.0" status="release" pubdate="20140422224746" resolver="public" artresolver="main" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<metadata-artifact status="no" details="" size="6164" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.google.guava\guava\ivy-17.0.xml" searched="false" original-local-location="C:\Users\Guillaume\.ivy2\cache\com.google.guava\guava\ivy-17.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0.pom"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.3.3"/>
+				<caller organisation="io.restx" name="restx-common" conf="compile, runtime" rev="17.0" rev-constraint-default="17.0" rev-constraint-dynamic="17.0" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-apidocs-doclet" conf="compile, runtime" rev="17.0" rev-constraint-default="17.0" rev-constraint-dynamic="17.0" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-classloader" conf="compile, runtime" rev="17.0" rev-constraint-default="17.0" rev-constraint-dynamic="17.0" callerrev="0.34"/>
+				<caller organisation="io.restx" name="restx-factory" conf="default, compile, runtime, master" rev="17.0" rev-constraint-default="17.0" rev-constraint-dynamic="17.0" callerrev="0.34"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="0.9.9-RC1"/>
+				<caller organisation="io.restx" name="restx-core" conf="default, compile, runtime, master" rev="17.0" rev-constraint-default="17.0" rev-constraint-dynamic="17.0" callerrev="0.34"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2243036" time="0" location="C:\Users\Guillaume\.ivy2\cache\com.google.guava\guava\bundles\guava-17.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="15.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="17.0"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-guava" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="2.3.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="11.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="17.0"/>
+				<caller organisation="org.reflections" name="reflections" conf="compile, runtime" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="0.9.9-RC1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
